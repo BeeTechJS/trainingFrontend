@@ -1,0 +1,23 @@
+.table-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  .page {
+    margin: 0px 5px;
+    font-size: 13px;
+    line-height: 19.5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active {
+    background-color: #093de6;
+    color: white;
+  }
+}

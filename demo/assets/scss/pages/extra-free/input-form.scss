@@ -1,0 +1,737 @@
+.wrapper {
+  input {
+    outline: none;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  span {
+    margin-bottom: 0;
+  }
+  select {
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.input-form {
+  display: none;
+  p{
+    margin-bottom: 0;
+  }
+  &.active {
+    display: block;
+  }
+  .container-insurance {
+    padding: 0 23px;
+  }
+  .user-form {
+    padding-top: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #093de6;
+    line-height: 16px;
+    padding-bottom: 20px;
+  }
+  .line {
+    border-top: 1px solid #a3a3a3;
+  }
+  .top-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin-right: 30px;
+      white-space: nowrap;
+    }
+    p,
+    span {
+      font-size: 16px;
+      color: #333333;
+    }
+    .checkbox-age {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+    .gender-male {
+      margin-right: 48px;
+    }
+    input.age-text {
+      width: 100%;
+      max-width: 250px;
+      font-size: 16px;
+      padding: 0 9px;
+      min-height: 34px;
+      border: 1px solid #33333379;
+      border-radius: 3px;
+    }
+    .select-location {
+      width: 100%;
+      max-width: 250px;
+      font-size: 16px;
+      padding: 0 9px;
+      min-height: 34px;
+      border-radius: 3px;
+      border: 1px solid #33333379;
+      color: #33333379;
+    }
+    .gender-input {
+      display: flex;
+      align-items: center;
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+ 
+    }
+    .age-input {
+      display: flex;
+      align-items: center;
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+    @include breakpoint(400) {
+      .age-input {
+        justify-content: space-between;
+      }
+    }
+
+    .locate-input {
+      display: flex;
+      align-items: center;
+      flex-basis: calc(100% / 3);
+      max-width: calc(100% / 3);
+      p{
+        font-size: 16px;
+      }
+    }
+    @include breakpoint(991) {
+      .gender-male {
+        margin-right: 14px;
+      }
+      .age-input {
+        flex-basis: 45%;
+        max-width: 45%;
+      }
+      .locate-input {
+        margin-top: 10px;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    @include breakpoint(575) {
+      .age-input {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+  .name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .select-name {
+      flex-basis: 66%;
+      max-width: 66%;
+      font-size: 16px;
+      font-weight: bold;
+      color: #093de6;
+      border: 1px solid #093de6;
+      border-radius: 3px;
+      min-height: 34px;
+    }
+    @include breakpoint(400) {
+      .select-name {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    @include breakpoint(576) {
+      .select-name {
+        font-size: 14px;
+      }
+    }
+    .wrap-rate {
+      display: flex;
+      align-items: center;
+      .list-rate {
+        padding-right: 13px;
+        align-items: center;
+        display: flex;
+        span {
+          color: #ffc107;
+          font-size: 16px;
+        }
+      }
+      h5 {
+        color: #093de6;
+        font-size: 12px;
+
+        border-right: 1px solid #093de6;
+        padding-right: 10px;
+        margin-right: 10px;
+      }
+      h6 {
+        color: #093de6;
+        font-size: 12px;
+      }
+    }
+  }
+  @include breakpoint(991) {
+    .name-container {
+      .wrap-rate {
+        margin-top: 10px;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .input-total {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .total-left {
+      flex-basis: 66%;
+      max-width: 66%;
+      display: flex;
+
+      align-items: center;
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 22px;
+        color: #333333;
+      }
+      .total {
+        flex: 1;
+        min-height: 34px;
+        border: 1px solid #33333379;
+        border-radius: 3px;
+        font-size: 16px;
+        padding-left: 9px;
+      }
+    }
+    .total-right {
+      flex-basis: 30%;
+      max-width: 30%;
+      display: flex;
+      align-items: center;
+      h4 {
+        font-size: 16px;
+        margin-right: 16px;
+        white-space: nowrap;
+      }
+      .input-value {
+        width: 100%;
+        min-height: 34px;
+        font-size: 16px;
+        border: 1px solid #33333379;
+        border-radius: 3px;
+      }
+    }
+    @include breakpoint(350) {
+      .total-right {
+        h4 {
+          font-size: 12px;
+        }
+        .input-value {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  @include breakpoint(991) {
+    .input-total {
+      .total-left {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        flex-basis: 100%;
+        max-width: 100%;
+        .total {
+          max-width: 500px;
+        }
+      }
+      .total-right {
+        flex-basis: 100%;
+        max-width: 100%;
+        .input-value {
+          width: max-content;
+        }
+      }
+    }
+  }
+  @include breakpoint(575) {
+    .input-total {
+      .total-left {
+        .total {
+          margin-top: 8px;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .list-insurance-input {
+    .insurance-item {
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .insurance-left {
+        display: flex;
+        flex-basis: 66%;
+        max-width: 66%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h3 {
+          white-space: nowrap;
+          line-height: 23px;
+          font-size: 16px;
+        }
+        .item-left {
+          display: flex;
+          align-items: center;
+          max-width: 357px;
+          justify-content: space-between;
+          flex: 1;
+          h4 {
+            white-space: nowrap;
+            color: #333333;
+            font-size: 16px;
+          }
+          .left-input {
+            width: 100%;
+            height: 34px;
+            max-width: 270px;
+            font-size: 16px;
+            padding-left: 8px;
+            border: 1px solid #33333379;
+            border-radius: 3px;
+          }
+        }
+      }
+
+      .insurance-right {
+        flex-basis: 30%;
+        max-width: 30%;
+        .item-right {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            white-space: nowrap;
+            font-size: 16px;
+            margin-right: 10px;
+            color: #333333;
+          }
+          .left-input {
+            width: 100%;
+            height: 34px;
+            max-width: 270px;
+            font-size: 16px;
+            padding-left: 8px;
+            border: 1px solid #33333379;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    @include breakpoint(1023) {
+      .insurance-item {
+        // justify-content: flex-start;
+        flex-basis: 50%;
+        max-width: 50%;
+        .insurance-left {
+          flex-basis: 100%;
+          max-width: 100%;
+          h3 {
+            margin-bottom: 10px;
+          }
+          .item-left {
+            flex-basis: 100%;
+            max-width: 100%;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            h4 {
+              margin-right: 10px;
+            }
+          }
+        }
+        .insurance-right {
+          flex-basis: 100%;
+          max-width: 100%;
+          .item-right {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+    @include breakpoint(991) {
+      .insurance-item {
+        padding-right: 10px;
+        .insurance-left {
+          h3 {
+            font-size: 12px;
+          }
+          .item-left {
+            h4 {
+              font-size: 12px;
+            }
+          }
+        }
+        .insurance-right {
+          .item-right {
+            h4 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    @include breakpoint(400) {
+      .insurance-item {
+        padding-right: 10px;
+        .insurance-left {
+          h3 {
+            font-size: 16px;
+          }
+          .item-left {
+            h4 {
+              font-size: 16px;
+            }
+          }
+        }
+        .insurance-right {
+          .item-right {
+            h4 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    @include breakpoint(575) {
+      .insurance-item {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  @include breakpoint(1023) {
+    .list-insurance-input {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .list-insu-long {
+    .long-item {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+      align-items: center;
+      h4 {
+        white-space: nowrap;
+        font-size: 16px;
+        margin-right: 10px;
+        color: #333333;
+      }
+      h6 {
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .input-long {
+        flex-basis: 65%;
+        max-width: 65%;
+        // max-width: 749px;
+        height: 34px;
+        font-size: 16px;
+        padding-left: 8px;
+        border: 1px solid #33333379;
+        border-radius: 3px;
+      }
+      @include breakpoint(991) {
+        h4,
+        h6 {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .input-long {
+          margin-top: 10px;
+          flex-basis: 100%;
+          max-width: 650px;
+        }
+      }
+    }
+    @include breakpoint(991) {
+    }
+
+    .note-insu {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 3px;
+        white-space: nowrap;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .change-pac {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+      .input-value {
+        // width: 100%;
+        flex-basis: 49%;
+        max-width: 49%;
+        // max-width: 564px;
+        height: 34px;
+        font-size: 16px;
+        border: 1px solid #093de6;
+        color: #093de6;
+        font-weight: bold;
+        border-radius: 3px;
+      }
+      h5 {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #093de6;
+      }
+      @include breakpoint(991) {
+        h5 {
+          font-size: 14px;
+          flex-basis: 100%;
+          max-width: 100%;
+          margin-top: 10px;
+          text-align: left;
+        }
+      }
+      @include breakpoint(400) {
+        .input-value {
+          font-size: 14px;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .insurance-item {
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .insurance-left {
+        display: flex;
+        flex-basis: 66%;
+        max-width: 66%;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+          white-space: nowrap;
+          font-size: 16px;
+        }
+        .item-left {
+          display: flex;
+          align-items: center;
+          max-width: 357px;
+          justify-content: space-between;
+          flex: 1;
+          h4 {
+            white-space: nowrap;
+            color: #333333;
+            font-size: 16px;
+          }
+          .left-input {
+            width: 100%;
+            height: 34px;
+            max-width: 270px;
+            font-size: 16px;
+            padding-left: 8px;
+            border: 1px solid #33333379;
+            border-radius: 3px;
+          }
+        }
+      }
+      .insurance-right {
+        flex-basis: 30%;
+        max-width: 30%;
+        .item-right {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            white-space: nowrap;
+            font-size: 16px;
+            color: #333333;
+          }
+          .left-input {
+            width: 100%;
+            height: 34px;
+            max-width: 270px;
+            font-size: 16px;
+            padding-left: 8px;
+            border: 1px solid #33333379;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    @include breakpoint(1023) {
+      .insurance-item {
+        // justify-content: flex-start;
+        flex-basis: 50%;
+        max-width: 50%;
+        .insurance-left {
+          flex-basis: 100%;
+          max-width: 100%;
+          h3 {
+            margin-bottom: 10px;
+          }
+          .item-left {
+            flex-basis: 100%;
+            max-width: 100%;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            h4 {
+              margin-right: 10px;
+            }
+          }
+        }
+        .insurance-right {
+          flex-basis: 100%;
+          max-width: 100%;
+          .item-right {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+    @include breakpoint(991) {
+      .insurance-item {
+        padding-right: 10px;
+        .insurance-left {
+          h3 {
+            font-size: 12px;
+          }
+          .item-left {
+            h4 {
+              font-size: 12px;
+            }
+          }
+        }
+        .insurance-right {
+          .item-right {
+            h4 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    @include breakpoint(400) {
+      .insurance-item {
+        padding-right: 10px;
+        .insurance-left {
+          h3 {
+            font-size: 16px;
+          }
+          .item-left {
+            h4 {
+              font-size: 16px;
+            }
+          }
+        }
+        .insurance-right {
+          .item-right {
+            h4 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    @include breakpoint(575) {
+      .insurance-item {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    .ques-insu {
+      font-size: 16px;
+      padding-bottom: 29px;
+      color: #333333;
+    }
+  }
+  .btn-two {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 282px;
+    padding-bottom: 31px;
+    a {
+      display: inline-block;
+    }
+    .left-btn {
+      flex-basis: 47%;
+      max-width: 47%;
+      background: #093de6;
+      border: 1px solid #093de6;
+      border-radius: 4px;
+      a {
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        padding: 4px 0;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .right-btn {
+      border: 1px solid #093de6;
+      border-radius: 4px;
+      flex-basis: 47%;
+      max-width: 47%;
+      .btn-hide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        font-size: 14px;
+        color: #093de6;
+        font-weight: bold;
+        padding: 4px 0;
+      }
+    }
+  }
+}

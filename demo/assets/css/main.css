@@ -1,0 +1,12 @@
+.header {
+  background: #bdca4b;
+  box-shadow: 5px 6px 6px 8px #ccc;
+}
+.header__logo {
+  background: #c83b82;
+}
+.header__menu {
+  background: green;
+}
+
+/*# sourceMappingURL=main.css.map */

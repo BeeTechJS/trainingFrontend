@@ -1,0 +1,201 @@
+.input-info {
+  padding-top: 43px;
+  padding-bottom: 83px;
+
+  .input-container {
+    max-width: 656px;
+    padding: 0 15px;
+    margin: 0 auto;
+    .wrap-info {
+      &.wrap-checkboxText {
+        align-items: flex-start;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      .checkbox {
+        color: #000000;
+        background-color: #000000;
+        width: 24px;
+        height: 24px;
+      }
+      .title-info {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 0;
+        flex-basis: 42%;
+        max-width: 42%;
+        color: #333333;
+      }
+      .input-value-box {
+        flex-basis: 58%;
+        max-width: 58%;
+        max-width: 350px;
+        outline: none;
+        height: 34px;
+        box-sizing: border-box;
+        border: 1px solid #33333379;
+        padding: 0 8px;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 16px;
+        color: rgb(51, 51, 51);
+      }
+      .checkbox-text {
+        flex-basis: 58%;
+        max-width: 58%;
+        max-width: 350px;
+      }
+      .wrap-checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        input {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          white-space: nowrap;
+          font-size: 16px;
+          margin-bottom: 0;
+          margin-left: 10px;
+          line-height: 16px;
+          display: inline-block;
+        }
+      }
+      .input-value {
+        flex-basis: 58%;
+        max-width: 58%;
+        max-width: 350px;
+        outline: none;
+        height: 34px;
+        box-sizing: border-box;
+        border: 1px solid #33333379;
+        padding: 0 8px;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #33333393;
+      }
+      .wrap-capcha {
+        flex-basis: 56%;
+        max-width: 56%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        h4 {
+          margin-bottom: 0;
+          margin-right: 13px;
+          margin-left: 14px;
+        }
+      }
+      .input-capcha {
+        padding: 0 8px;
+        outline: none;
+        height: 34px;
+        box-sizing: border-box;
+        border: 1px solid #33333379;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000000;
+        flex-basis: 64%;
+        max-width: 64%;
+      }
+      @include breakpoint(575) {
+        .input-capcha {
+          flex-basis: 100%;
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      .capcha {
+        background: #c4c4c45b;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 9px 14px;
+        margin-bottom: 0;
+        margin-left: 14px;
+        margin-right: 13px;
+      }
+    }
+
+    @include breakpoint(767) {
+      .wrap-info {
+        .title-info {
+          padding-bottom: 10px;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .input-value-box {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .checkbox-text {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .input-value {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        .wrap-capcha {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .view-list {
+    text-align: center;
+    padding-top: 6px;
+    &.hide{
+      display: none;
+    }
+  }
+  .btn-view {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #093de6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  .btn-view.hide {
+    display: none;
+  }
+  @include breakpoint(400) {
+    .view-list {
+      padding-bottom: 50px;
+    }
+    .btn-view {
+      border: 1px solid #093de6;
+      color: #093de6;
+      background-color: #ffffff;
+      font-weight: bold;
+    }
+  }
+}
+@include breakpoint(991) {
+  .input-info .input-container .wrap-info .wrap-checkbox p{
+    white-space: initial;
+  }
+  .input-info {
+    padding-top: 24px;
+    padding-bottom: 50px;
+  }
+}
+@include breakpoint(767) {
+  .input-info {
+    padding-top: 18px;
+    padding-bottom: 35px;
+  }
+}

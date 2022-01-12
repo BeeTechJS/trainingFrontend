@@ -1,0 +1,72 @@
+.advise-register {
+  position: fixed;
+  display: none;
+  padding: 20px 0;
+  bottom: 15%;
+  right: 2%;
+  z-index: 98;
+  width: 280px;
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #c4c4c4;
+  .close-advise {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .advise-add {
+    margin-top: 10px;
+    font-size: 12px;
+    text-transform: none;
+    width: 90%;
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: #093de6;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #333333;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  &__item {
+    width: 100%;
+    padding: 10px 0;
+    .item-inner {
+      font-size: 14px;
+      line-height: 16px;
+      width: 90%;
+      color: #333333;
+      padding: 8px 4px;
+      border: #c4c4c4 1px solid;
+      border-radius: 5px;
+    }
+    .input-value {
+      width: 90%;
+      padding: 8px 4px;
+      font-size: 14px;
+      line-height: 16px;
+      border-radius: 5px;
+      color: #333333;
+      border: #c4c4c4 1px solid;
+      option[value=''][disabled] {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(991) {
+    bottom: 14%;
+    right: 2%;
+  }
+  @include breakpoint(767) {
+    bottom: 13%;
+    right: 2%;
+  }
+}
+.advise-register.active {
+  display: block;
+}

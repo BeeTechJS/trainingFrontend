@@ -1,0 +1,14 @@
+.btn {
+  text-transform: uppercase;
+  color: $black;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+  border-radius: 5px;
+  &--primary {
+    background-color: #ffae30;
+  }
+  @include breakpoint(1023) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,142 @@
+.banner {
+  @include breakpoint(400) {
+    .owl-carousel .owl-item img {
+      min-height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  &-overlay {
+    position: absolute;
+    width: 100%;
+    height: 64%;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .title-overlay {
+      padding-bottom: 5.2rem;
+      font-size: 24px;
+      color: white;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 22%,
+      rgba(0, 0, 0, 0.7682423311121324) 100%
+    );
+
+    @include breakpoint(991) {
+    }
+    @include breakpoint(767) {
+    }
+    @include breakpoint(576) {
+      .title-overlay {
+        padding-bottom: 3.2rem;
+        font-size: 20px;
+        color: white;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+  }
+  .container-insurance {
+    position: relative;
+  }
+  &__btn {
+    padding: 10px 0;
+    background: #093de6;
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    > img {
+      width: 45px;
+      margin: 0 15px;
+    }
+    &-content {
+      padding: 8px 20px;
+      border-radius: 5px;
+      border: #ffffff solid 1px;
+      > h3 {
+        color: #ffffff;
+        text-transform: capitalize;
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+  .owl-theme .owl-dots .owl-dot {
+    outline: none;
+    z-index: 99;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    background: #293354;
+  }
+  .owl-theme .owl-dots .owl-dot span:hover {
+    background: #093de6;
+  }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: #093de6;
+  }
+  .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .owl-theme .owl-nav {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+  }
+  @include breakpoint(400) {
+    .owl-theme .owl-nav {
+      padding: 0 11px;
+    }
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    width: 24px;
+    height: 24px;
+    background: #ffffffbd;
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin-bottom: 2px;
+      font-size: 21px;
+      color: #093DE6;
+    }
+  }
+  .owl-carousel .owl-item img {
+    max-height: 464px;
+  }
+  @include breakpoint(576) {
+    .owl-theme .owl-dots {
+      bottom: 5px;
+    }
+  }
+}
+@include breakpoint(400){
+  .banner__btn-content h3{ 
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .banner__btn-content{
+    padding: 6px 10px;
+    line-height: 19px;
+    min-height: 34px;
+  }
+}

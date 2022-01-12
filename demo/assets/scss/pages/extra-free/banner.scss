@@ -1,0 +1,148 @@
+.banner-fee {
+  .container-insurance {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    max-height: 546px;
+  }
+  @include breakpoint(400) {
+    .container-insurance {
+      height: 320px;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 64%;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .title-overlay {
+      // padding-bottom: 32px;
+      padding: 0 0px 32px 0px;
+      margin-bottom: 0;
+      line-height: 32px;
+      font-size: 24px;
+      color: white;
+      text-transform: capitalize;
+      font-weight: bold;
+      text-align: center;
+    }
+    @include breakpoint(991) {
+      .title-overlay {
+        padding-bottom: 20px;
+        font-size: 16px;
+      }
+    }
+    @include breakpoint(767) {
+      .title-overlay {
+        padding-bottom: 16px;
+        font-size: 14px;
+      }
+    }
+    @include breakpoint(400) {
+      .title-overlay {
+        padding-bottom: 16px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 22%,
+      rgba(0, 0, 0, 0.7682423311121324) 100%
+    );
+    .list-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 39px;
+      img {
+        width: 40px;
+      }
+      a {
+        text-transform: capitalize;
+        text-decoration: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 6px 18px;
+        display: inline-block;
+        border: 1px solid white;
+        margin: 0 20px;
+      }
+    }
+    @include breakpoint(991) {
+      .list-info {
+        padding-bottom: 20px;
+      }
+    }
+    @include breakpoint(767) {
+      .list-info {
+        padding-bottom: 12px;
+      }
+    }
+  }
+  @include breakpoint(400) {
+    .banner-overlay {
+      height: 100%;
+    }
+  }
+}
+.login-welcome {
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 26px;
+  text-align: center;
+  .login-text {
+    font-size: 16px;
+    color: #093de6;
+    font-weight: bold;
+    // font-weight: bold;
+    margin-bottom: 0;
+  }
+  @include breakpoint(767) {
+    .login-text {
+      font-size: 14px;
+    }
+  }
+  @include breakpoint(375) {
+    .login-text {
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+}
+@include breakpoint(400) {
+  .login-welcome {
+    padding-top: 66px;
+  }
+}
+.choose-text {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #093de6;
+  line-height: 36px;
+  padding-bottom: 13px;
+}
+@include breakpoint(400) {
+  .show-at-mobile {
+    display: block !important;
+  }
+}

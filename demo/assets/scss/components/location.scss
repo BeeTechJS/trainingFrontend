@@ -1,0 +1,18 @@
+.location {
+  font-size: 13px;
+  padding: 18px 0;
+  > a {
+    line-height: 19.5px;
+    font-weight: 400;
+    color: #000000;
+  }
+  > a:hover {
+    text-decoration: none;
+  }
+  > span {
+    padding: 0 5px;
+  }
+  @include breakpoint(400) {
+    display: none;
+  }
+}

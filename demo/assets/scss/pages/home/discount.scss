@@ -1,0 +1,43 @@
+.discount-home {
+  display: none;
+  position: relative;
+  padding-bottom: 72px;
+  &__content {
+    background-image: url(../../../../images/discount2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 191px;
+    padding-top: 18px;
+    .logo {
+      padding-right: 16%;
+      &__img {
+        height: 61px;
+      }
+    }
+    .content {
+      color: white;
+      text-transform: capitalize;
+      padding-top: 18px;
+      padding-right: 22px;
+      .title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .item {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+  .advise {
+    padding: 0 10px 20px 0;
+  }
+  @include breakpoint(400) {
+    display: block;
+  }
+}

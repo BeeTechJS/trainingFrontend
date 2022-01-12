@@ -1,0 +1,24 @@
+@mixin box-shadow($hoff, $voff, $blur, $spread, $color) {
+    box-shadow: $hoff $voff $blur $spread $color;
+}
+
+@mixin block-tranColorLogo ($color) {
+    background: $color;
+}
+
+@mixin breakpoint($size) {
+    @media only screen and (max-width: $size + px) {
+        @content;
+    }
+}
+
+.header {
+    background: rgb(189, 202, 75);
+    @include box-shadow(5px, 6px, 6px, 8px, #ccc);
+    &__logo {
+        @include block-tranColorLogo(#c83b82)
+    }
+    &__menu {
+        background: green;
+    }
+}

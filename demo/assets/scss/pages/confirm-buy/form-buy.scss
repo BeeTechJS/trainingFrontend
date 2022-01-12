@@ -1,0 +1,112 @@
+.form-buy {
+  padding: 0 15px;
+  padding-top: 8px;
+  .form-container {
+    padding-top: 10px;
+    max-width: 522px;
+    margin: 0 auto;
+    .list-btn {
+      display: flex;
+      align-items: center;
+
+      h5 {
+        cursor: pointer;
+        font-size: 14px;
+        padding: 7px 15px;
+        background: #ececec;
+        margin-right: 9px;
+        color: #757575;
+        border-radius: 10px 10px 0px 0px;
+        &.active {
+          color: white;
+          background: #093de6;
+        }
+      }
+    }
+    .form-input-buy {
+      margin-bottom: 6px;
+      border: 0.2px solid #c4c4c4;
+      border-radius: 0px 20px;
+      padding: 24px 27px 30px 27px;
+    }
+    .item-input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+      h5 {
+        font-size: 13px;
+        flex-basis: 25.3%;
+        max-width: 25.3%;
+        color: #000000;
+        span {
+          color: #ff3535;
+          margin-left: 2px;
+        }
+      }
+
+      .input-name {
+        flex-basis: 74.7%;
+        max-width: 74.7%;
+        border: 0.5px solid #c4c4c4;
+        border-radius: 4px;
+
+        font-size: 13px;
+        padding: 7px 6px;
+      }
+      @include breakpoint(575) {
+        h5 {
+          flex-basis: 100%;
+          max-width: 100%;
+          margin-bottom: 2px;
+        }
+        .input-name {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .btn-confirm {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .btn-click-buy {
+        cursor: pointer;
+        font-weight: 700;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 6px 23px;
+        border: 1px solid #093de6;
+        color: #093de6;
+        margin-bottom: 3px;
+        text-align: center;
+
+        &.active {
+          color: white;
+          background: #093de6;
+        }
+      }
+    }
+    @include breakpoint(575) {
+      .btn-confirm {
+        // flex-direction: column;
+        .btn-click-buy {
+          font-size: 14px;
+          padding: 6px 13px;
+          // flex-basis: 40%;
+          // max-width: 40%;
+        }
+      }
+    }
+  }
+}
+@include breakpoint(400) {
+  .form-buy {
+    padding: 0 4px;
+  }
+  .form-buy .form-container .form-input-buy {
+    padding: 24px 12px 30px 12px;
+  }
+}

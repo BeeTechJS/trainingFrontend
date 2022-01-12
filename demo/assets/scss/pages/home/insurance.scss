@@ -1,0 +1,403 @@
+.insurance {
+  &__title {
+    padding-top: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+    > h3 {
+      font-size: 16px;
+      line-height: 16px;
+      color: #093de6;
+      font-weight: 700;
+    }
+    @include breakpoint(767) {
+      > h3 {
+        font-size: 11px;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: #093de6 solid 1px;
+    > div {
+      padding: 0;
+    }
+    &-image {
+      width: 100%;
+      padding-right: 10px;
+      img {
+        width: 100%;
+        min-height: 442px;
+      }
+    }
+    &-inner {
+      padding-left: 120px;
+      .inner-title {
+        padding-bottom: 20px;
+        margin-left: -2px;
+        > h2 {
+          text-transform: capitalize;
+          color: #093de6;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 40px;
+        }
+      }
+      .inner-detail {
+        color: #333333;
+        font-size: 16px;
+        > p {
+          line-height: 30px;
+          .down2 {
+            display: none;
+          }
+        }
+      }
+      .inner-btn {
+        padding-top: 35px;
+        > button {
+          margin-right: 15px;
+          text-decoration: none;
+          text-transform: capitalize;
+          border: 1px solid #093de6;
+          padding: 8px 11px;
+          border-radius: 5px;
+          > h3 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #093de6;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(991) {
+    &__content {
+      > img {
+        padding-right: 5px;
+      }
+      &-inner {
+        padding-left: 70px;
+        .inner-title {
+          padding-bottom: 10px;
+          margin-left: -2px;
+          > h2 {
+            text-transform: capitalize;
+            font-size: 20px;
+          }
+        }
+        .inner-detail {
+          font-size: 13px;
+          > p {
+            line-height: 18px;
+          }
+        }
+        .inner-btn {
+          padding-top: 25px;
+          > button {
+            > h3 {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(767) {
+    &__content {
+      &-image {
+        > img {
+          min-height: 184px;
+        }
+      }
+      // > img {
+      //   padding-right: 5px;
+
+      // }
+      &-inner {
+        padding-left: 50px;
+        .inner-title {
+          padding-bottom: 5px;
+          margin-left: -2px;
+          > h2 {
+            text-transform: capitalize;
+            font-size: 18px;
+          }
+        }
+        .inner-detail {
+          font-size: 12px;
+          > p {
+            line-height: 16px;
+            .down {
+              display: none;
+            }
+            .down2 {
+              display: block;
+            }
+          }
+        }
+        .inner-btn {
+          padding-top: 15px;
+          > button {
+            > h3 {
+              font-size: 14px;
+            }
+          }
+          > button {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(576) {
+    &__content {
+      align-items: initial;
+      &-image {
+        padding-top: 10px;
+      }
+      &-inner {
+        padding: 10px 0 0 25px;
+        .inner-title {
+          > h2 {
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(400) {
+    &__content {
+      &-image {
+        > img {
+          width: 100%;
+          max-width: 59%;
+          min-height: 254px;
+          object-fit: cover;
+        }
+      }
+      &-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -42%;
+        padding-left: 14px;
+        .inner-title {
+          > h2 {
+            font-size: 20px;
+            line-height: 26px;
+          }
+        }
+        .inner-detail {
+          font-size: 14px;
+          > p {
+            line-height: 20px;
+          }
+        }
+        .inner-btn {
+          > button {
+            > h3 {
+              font-size: 14px;
+            }
+          }
+          .search-product {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__content-reverse {
+    border-bottom: #093de6 solid 1px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    > div {
+      padding: 0;
+    }
+    &-image {
+      padding-left: 10px;
+      > img {
+        width: 100%;
+        min-height: 442px;
+      }
+    }
+    &-inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+      padding-right: 120px;
+      .inner-title {
+        margin-right: -2px;
+        padding-bottom: 20px;
+        > h2 {
+          text-transform: capitalize;
+          color: #093de6;
+          font-size: 24px;
+          line-height: 40px;
+          font-weight: bold;
+          .down {
+            display: none;
+          }
+        }
+      }
+      .inner-detail {
+        color: #333333;
+        font-size: 16px;
+        > p {
+          line-height: 30px;
+          .down {
+            display: none;
+          }
+        }
+      }
+      .inner-btn {
+        padding-top: 35px;
+        > button {
+          margin-right: 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          text-transform: capitalize;
+          border: 1px solid #093de6;
+          padding: 8px 11px;
+          > h3 {
+            font-weight: bold;
+            font-size: 14px;
+            color: #093de6;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(991) {
+    &__content-reverse {
+      &-image {
+        > img {
+          padding-left: 5px;
+        }
+      }
+
+      &-inner {
+        padding-right: 70px;
+        .inner-title {
+          padding-bottom: 10px;
+          margin-right: -2px;
+          > h2 {
+            text-transform: capitalize;
+            font-size: 20px;
+          }
+        }
+        .inner-detail {
+          font-size: 13px;
+          > p {
+            line-height: 18px;
+          }
+        }
+        .inner-btn {
+          padding-top: 25px;
+          > button {
+            > h3 {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(767) {
+    &__content-reverse {
+      &-image {
+        > img {
+          min-height: 184px;
+        }
+      }
+      &-inner {
+        padding-right: 50px;
+        .inner-title {
+          padding-bottom: 5px;
+          margin-right: -2px;
+          > h2 {
+            font-size: 20px;
+          }
+        }
+        .inner-detail {
+          font-size: 12px;
+          > p {
+            line-height: 16px;
+          }
+        }
+        .inner-btn {
+          padding-top: 15px;
+          > button {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(576) {
+    &__content-reverse {
+      &-image {
+        padding-top: 10px;
+      }
+      &-inner {
+        padding: 10px 25px 0 0;
+        .inner-detail {
+          > p {
+            .down {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(400) {
+    &__content-reverse {
+      padding: 20px 0;
+      &-image {
+        text-align: right;
+        > img {
+          width: 100%;
+          max-width: 59%;
+          min-height: 254px;
+          object-fit: cover;
+        }
+      }
+      &-inner {
+        margin-right: -42%;
+        padding-right: 14px;
+        .inner-title {
+          > h2 {
+            font-size: 20px;
+            line-height: 26px;
+            .down {
+              display: block;
+            }
+          }
+        }
+        .inner-detail {
+          > p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        .inner-btn {
+          padding-top: 15px;
+          > button {
+            > h3 {
+              font-size: 14px;
+            }
+          }
+          .search-product {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

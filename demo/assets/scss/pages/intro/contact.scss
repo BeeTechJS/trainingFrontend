@@ -1,0 +1,58 @@
+.contact {
+  position: relative;
+  .container-insurance {
+    padding: 24px;
+  }
+  &__title {
+    > h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+  &__content {
+    padding: 25px 0 40px 0;
+    .item-important {
+      color: #3a3a3a;
+      font-weight: 600;
+      padding-bottom: 25px;
+      font-size: 18px;
+      line-height: 19.5px;
+      margin: 0;
+    }
+    .item {
+      padding: 9px 0;
+      margin: 0;
+      font-size: 16px;
+      line-height: 19.5px;
+      color: #3a3a3a;
+      > span {
+        color: #9a9a9a;
+      }
+    }
+  }
+  @include breakpoint(991) {
+    &__content {
+      padding: 15px 0 35px 0;
+      .item-important {
+        margin-bottom: 0px;
+        line-height: 25px;
+        padding-bottom: 6px;
+      }
+      .item {
+        margin-bottom: 3px;
+        font-size: 14px;
+      }
+    }
+  }
+  @include breakpoint(767) {
+    &__content {
+      .item-important {
+        margin-bottom: 0px;
+      }
+      .item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

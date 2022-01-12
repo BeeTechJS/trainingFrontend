@@ -1,0 +1,52 @@
+.exp {
+  .container-insurance {
+    padding: 24px;
+  }
+  &__title {
+    > h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+  &__content {
+    padding: 15px 0 40px 0;
+    .item-important {
+      text-decoration-line: underline;
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 32px;
+      color: #000;
+    }
+    .item {
+      font-size: 18px;
+      line-height: 32px;
+      color: #757575;
+    }
+  }
+  @include breakpoint(1024) {
+    .item-important {
+      line-height: 25px;
+    }
+  }
+  @include breakpoint(991) {
+    &__content {
+      padding: 10px 0 35px 0;
+      .item-important {
+        margin-bottom: 10px;
+      }
+      .item {
+        margin-bottom: 3px;
+        font-size: 18px;
+      }
+    }
+  }
+  @include breakpoint(767) {
+    &__content {
+      padding: 5px 0 30px 0;
+      .item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
